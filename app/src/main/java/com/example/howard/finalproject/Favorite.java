@@ -3,7 +3,10 @@ package com.example.howard.finalproject;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Favorate extends AppCompatActivity {
+/**
+ * Stores user's favorite drinks
+ */
+public class Favorite extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

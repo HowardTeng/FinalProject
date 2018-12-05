@@ -16,8 +16,11 @@ import com.android.volley.toolbox.Volley;
 
 import org.json.JSONObject;
 
+/**
+ * Main screen for our cocktail database application
+ */
 public class MainActivity extends AppCompatActivity {
-    private Button toCategory, toSearch, toFavorate;
+    private Button toCategory, toSearch, toFavorite;
     private static RequestQueue requestQueue;
     private static final String TAG = "FinalProject:Main";
     @Override
@@ -38,11 +41,11 @@ public class MainActivity extends AppCompatActivity {
                 segue("Search");
             }
         });
-        toFavorate = findViewById(R.id.favorate);
-        toFavorate.setOnClickListener(new View.OnClickListener() {
+        toFavorite = findViewById(R.id.favorite);
+        toFavorite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                segue("Favorate");
+                segue("Favorite");
             }
         });
     }
@@ -51,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         switch(destination) {
             case "Category":intent = new Intent(this, Category.class);break;
             case "Search": intent = new Intent(this, search.class);break;
-            case "Favorate": intent = new Intent(this, Favorate.class); break;
+            case "Favorite": intent = new Intent(this, Favorite.class); break;
             default: intent = new Intent(this, MainActivity.class);
         }
         startActivity(intent);

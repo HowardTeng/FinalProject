@@ -20,7 +20,7 @@
             android:name=".Category"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".search" />
-        <activity android:name=".Favorate"></activity>
+        <activity android:name=".Favorite"></activity>
     </application>
 
 </manifest>
