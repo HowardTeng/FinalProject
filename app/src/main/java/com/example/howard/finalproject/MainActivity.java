@@ -26,11 +26,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestQueue = Volley.newRequestQueue(this);
         setContentView(R.layout.activity_main);
         toCategory = findViewById(R.id.category);
         toCategory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startAPICall();
                 segue("Category");
             }
         });
@@ -78,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
             });
             requestQueue.add(jsonObjectRequest);
         } catch (Exception e) {
+            System.out.println("error occur");
             e.printStackTrace();
         }
     }
