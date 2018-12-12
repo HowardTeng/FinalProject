@@ -11,16 +11,16 @@
         android:layout_width="131dp"
         android:layout_height="92dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="75dp"
         android:layout_marginEnd="208dp"
         android:layout_marginRight="208dp"
-        android:text="Search"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="45dp" />
+        android:text="Search" />
 
     <Button
         android:id="@+id/favorate"
@@ -36,38 +36,50 @@
         android:layout_marginTop="195dp"
         android:layout_marginEnd="43dp"
         android:layout_marginRight="43dp"
-        android:text="Favorate" />
+        android:text="Favorite" />
 
     <Button
         android:id="@+id/category"
         android:layout_width="131dp"
         android:layout_height="92dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginStart="210dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="77dp"
         android:layout_marginEnd="43dp"
         android:layout_marginRight="43dp"
-        android:text="Category"
-        android:layout_marginLeft="210dp"
-        android:layout_alignParentLeft="true" />
+        android:text="Category" />
 
     <Button
-        android:id="@+id/startAPICall"
+        android:id="@+id/randomCocktail"
         android:layout_width="131dp"
         android:layout_height="92dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
         android:layout_marginTop="196dp"
         android:layout_marginEnd="209dp"
         android:layout_marginRight="209dp"
-        android:text="Start API Call"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="44dp" />
+        android:text="Get A Random Cocktail" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="250dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:gravity="center_horizontal"
+        android:text="MyBartender"
+        android:textColor="#000000"
+        android:textSize="32dp" />
 
 </RelativeLayout>

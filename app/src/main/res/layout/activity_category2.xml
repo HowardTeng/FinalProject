@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Favorate">
+    tools:context=".Category2">
 
     <ListView
-        android:id="@+id/favoriteList"
+        android:id="@+id/Category2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
