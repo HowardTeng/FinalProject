@@ -58,9 +58,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 getRandom();
-                Intent randomIntent = new Intent(MainActivity.this, Info.class);
-                randomIntent.putExtra("INFO_ID", randomId);
-                startActivity(randomIntent);
             }
         });
     }
@@ -86,6 +83,9 @@ public class MainActivity extends AppCompatActivity {
                             try {
                                 randomId = response.getJSONArray("drinks").getJSONObject(0).getString("idDrink");
                                 Log.d(TAG, randomId);
+                                randomIntent = new Intent(MainActivity.this, Info.class);
+                                randomIntent.putExtra("INFO_ID", randomId);
+                                startActivity(randomIntent);
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
